@@ -24,6 +24,8 @@
 					$('nav#menu-left').mmenu();
 				});
 		</script>
+		<script type="text/javascript" src="js/loginVal.js"></script>
+		<script type="text/javascript" src="js/signupVal.js"></script>
 		<!-----//768px-menu----->
 	</head>
 	<body>
@@ -56,19 +58,19 @@
 						<li id="signupContainer"><a class="signup" id="signupButton" href="#"><span><i>Sign Up</i></span></a>
 							 <div class="clear"> </div>
 				                <div id="signupBox">                
-				                    <form id="signupForm" action="mycalendar.html">
+				                    <form id="signupForm" name="signupForm" action="mycalendar.html" onsubmit="return ValidateSignupInfo()">
 				                        <fieldset id="signupbody">
 				                            <fieldset>
 				                                <label for="email">Email Address <span>*</span></label>
-				                                <input type="text" name="email" id="signupemail" />
+				                                <input type="text" name="email" id="signupemail" required/>
 				                            </fieldset>
 				                            <fieldset>
 				                                <label for="password">Choose Password <span>*</span></label>
-				                                <input type="password" name="password" id="signuppassword" />
+				                                <input type="password" name="password1" id="signuppassword" required/>
 				                            </fieldset>
 				                             <fieldset>
 				                                <label for="password">Confirm Password <span>*</span></label>
-				                                <input type="password" name="password" id="signuppassword1" />
+				                                <input type="password" name="password2" id="signuppassword1" required/>
 				                            </fieldset>
 				                            <input type="submit" id="signup" value="Register Now!" />
 				                        </fieldset>
@@ -79,15 +81,15 @@
 						<li id="loginContainer"><a class="login" id="loginButton" href="#"><span><i>Log In</i></span></i></a>
 							 <div class="clear"> </div>
 				                <div id="loginBox">                
-				                    <form id="loginForm" action="mycalendar.html">
+				                    <form id="loginForm" name="loginForm" action="mycalendar.html" onsubmit="return ValidateLoginInfo()">
 				                        <fieldset id="body">
 				                            <fieldset>
 				                                <label for="email">Email Address</label>
-				                                <input type="text" name="email" id="email" />
+				                                <input type="text" name="email" id="email" required/>
 				                            </fieldset>
 				                            <fieldset>
 				                                <label for="password">Password</label>
-				                                <input type="password" name="password" id="password" />
+				                                <input type="password" name="password" id="password" required/>
 				                            </fieldset>
 				                            <label class="remeber" for="checkbox"><input type="checkbox" id="checkbox" />Remember me</label>
 				                            <input type="submit" id="login" value="login" />
