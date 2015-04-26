@@ -63,7 +63,7 @@
 	top:120px;
 	white-space: nowrap;
 	z-index: 10;
-	text-shadow: 0px 0px 10px rgba(85, 85, 85, 0.35);
+	text-shadow: 0px 0px 25px black;
 	-webkit-text-shadow: 0px 0px 10px rgba(85, 85, 85, 0.35);
 	-moz-text-shadow: 0px 0px 10px rgba(85, 85, 85, 0.35);
 	-o-text-shadow: 0px 0px 10px rgba(85, 85, 85, 0.35);
@@ -79,7 +79,7 @@
 	line-height: 1.2em;
 	margin: 0 auto;
 	width: 58%;
-	text-shadow: 0px 0px 10px rgba(85, 85, 85, 0.35);
+	text-shadow: 0px 0px 25px black;
 	-webkit-text-shadow: 0px 0px 10px rgba(85, 85, 85, 0.35);
 	-moz-text-shadow: 0px 0px 10px rgba(85, 85, 85, 0.35);
 	-o-text-shadow: 0px 0px 10px rgba(85, 85, 85, 0.35);
