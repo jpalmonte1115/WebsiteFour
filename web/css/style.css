@@ -71,6 +71,7 @@ body{
 	width:70%;
 	margin:0 auto;
 }
+
 #page{
 	display:none;
 }
@@ -298,11 +299,13 @@ body{
 /*---start-footer-grids---*/
 .footer-grids {
 	background: #343642;
+	margin-top: 550px;
 }
 .footer-grid{
 	width: 23.33%;
 	float: left;
 	margin-right: 2%;
+	margin-left: 50px;
 }
 .footer-grid:nth-child(3n+1){
 	margin-right:0;
@@ -1681,6 +1684,7 @@ input:focus {
 	}
 	.footer-grids {
 		padding: 1em 0 2em;
+		margin-top: 300px;
 	}
 	.footer-grid ul li {
 		display:inline-block;
@@ -1757,4 +1761,137 @@ input:focus {
 	.sign-ligin-btns ul li a.signup span, .sign-ligin-btns ul li a.login span {
 		padding: 0;
 	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.month {
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	height: 538px;
+	left: 50%;
+	margin: -195px 0 0 -245px;
+	position: absolute;
+	top: 50%;
+	width: 510px;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+	text-align: center;
+}
+
+.calendar header {
+	position: relative;
+	margin: 0 0 0 -50px;
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #3db39e;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #3db39e;
+	color: #f9f9f9;
+}
+
+.event {
+	cursor: pointer;
+	position: relative;
+}
+
+.event:after {
+	background: #3db39e;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
 }
